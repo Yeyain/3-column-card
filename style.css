@@ -1,0 +1,124 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@font-face {
+    font-family: 'Deca';
+    src: url('fonts/LexendDeca-Regular.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'BigShoulders';
+    src: url('fonts/BigShouldersDisplay-Regular.ttf') format('truetype'),
+}
+
+body {
+    margin: 0;
+    padding: 2em;
+    
+}
+
+.flex {
+    display: flex;
+    align-self: center;
+    width: 80%;
+    padding: 3em;
+}
+
+section {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-transform:uppercase;
+    font-weight: 700;
+    font-size: 2em;
+    color: hsl(0, 0%, 95%);
+    font-family: 'BigShoulders', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+    max-width: 4em;
+}
+
+.one {
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+.two {
+    background-color:hsl(184, 100%, 22%);
+}
+
+.three {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.8em;
+    color:hsla(0, 0%, 100%, 0.75);
+    width: 80%;
+    margin-bottom: 12em;
+    font-family: 'Deca', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+    color: hsl(0, 0%, 95%);
+    border-radius: 2em;
+    padding: 1.2em;
+    font-weight: 400;
+    width: 50%;
+    margin-top: auto;
+}
+
+.one button{
+    color: hsl(31, 77%, 52%);
+    border:hsl(31, 77%, 52%);
+}
+
+
+.two button {
+    color:hsl(184, 100%, 22%);
+    border:hsl(184, 100%, 22%);
+}
+
+.three button {
+    color:hsl(179, 100%, 13%);
+    border:hsl(179, 100%, 13%)
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 740px)
+{
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section {
+        padding: 3em;
+
+    }
+
+    .one {
+        border-top-right-radius: 1em;
+        border-top-left-radius: 1em;
+    }
+    
+    .three {
+        border-bottom-right-radius: 1em;
+        border-bottom-left-radius: 1em;
+    }
+    
+    p {
+        margin-bottom: 2em;
+    }
+}
